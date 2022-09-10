@@ -1,6 +1,7 @@
 *{
     margin: 5px;
     padding: 5px;
+    box-sizing: border-box;
 }
 main{
     box-shadow: 0 0 30px 0 rgba(34, 50, 80, 0.2);
@@ -20,17 +21,27 @@ main *{
     border-radius: 5px;
     border: 0;
 }
-#gridArea{
+#flexArea{
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(10,30px);
-    gap: 3px;
+    display: flex;
+    flex-wrap: wrap;
 }
-#gridArea div{
-    margin: 0;
+#flexArea div{
+    margin: 2px;
     padding: 0;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 1px;
     border: 1px solid black;
+}
+#info{
+    display: flex;
+    align-items: center;
+    text-decoration: 1px black underline ;
+}
+#startWrapper{
+    margin: 0;
+    padding: 0;
+    animation-duration: 1s;
+    overflow: hidden;
 }
