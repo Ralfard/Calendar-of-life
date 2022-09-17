@@ -45,3 +45,6 @@ main *{
     animation-duration: 1s;
     overflow: hidden;
 }
+#finishWrapper{
+    display: none;
+}
